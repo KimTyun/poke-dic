@@ -168,7 +168,7 @@ function App() {
 
    return (
       <PokeDicTemplate>
-         <Insert onAddPokemon={onAddPokemon} />
+         <Insert onAddPokemon={onAddPokemon} allPokemonList={allPokemonList} />
          <List pokemons={pokemons} onRemovePokemon={onRemovePokemon} onDisabledPokemon={onDisabledPokemon} />
       </PokeDicTemplate>
    )
