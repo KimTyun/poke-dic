@@ -15,10 +15,12 @@ function Insert({ onAddPokemon }) {
    )
 
    return (
-      <form className="Insert" onSubmit={onSubmit}>
-         <input type="text" placeholder="포켓몬 이름을 입력하세요" value={text} onChange={onChange} />
-         <button type="submit">등록</button>
-      </form>
+      <div className="insertWrap">
+         <form className="insert" onSubmit={onSubmit}>
+            <input type="text" placeholder="포켓몬 이름을 입력하세요" value={text} onChange={onChange} />
+            <button type="submit">등록</button>
+         </form>
+      </div>
    )
 }
 
