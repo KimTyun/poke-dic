@@ -1,0 +1,165 @@
+body {
+   margin: 0;
+   background: #e9ecef;
+   padding: 0;
+}
+li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+ul {
+   padding: 0;
+}
+img {
+   width: 100px;
+}
+#root {
+   margin: 30px auto;
+   background-color: rgb(255, 255, 255);
+   width: 100%;
+   max-width: 1200px;
+}
+.pokeDicTemplate {
+   overflow: hidden;
+}
+
+.insertWrap {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 30px auto;
+
+   border-radius: 10px;
+   background-color: aquamarine;
+   width: 80%;
+   height: 50px;
+}
+
+.insert {
+   width: 90%;
+}
+
+.insert > input {
+   border: none;
+   border-radius: 5px;
+   background-color: white;
+   width: 70%;
+   font-size: 1.5rem;
+}
+
+.insert > button {
+   margin-left: 5%;
+   border: none;
+   border-radius: 5px;
+   background: black;
+   color: white;
+   font-size: 1.2rem;
+}
+.insert > button:nth-last-of-type(1) {
+   margin-left: 1%;
+}
+
+.list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: left;
+   gap: 10px;
+   padding-left: 10px;
+}
+
+.list > li {
+   border: 1px solid black;
+   width: 100%;
+   max-width: 31%;
+}
+
+.pokemonWrap.grayscale {
+   filter: grayscale(1);
+}
+
+.pokemonWrap.grayscale > div > p {
+   color: gray;
+}
+
+.pokemonWrap > div {
+   display: flex;
+   justify-content: center;
+}
+
+.pokemonWrap > div > p {
+   display: block;
+   flex-wrap: wrap;
+   margin: 0;
+   padding: 10px;
+   width: 50%;
+   color: black;
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+.pokemonWrap > div:nth-of-type(2) {
+   background: lightblue;
+   text-align: center;
+}
+
+.pokemonWrap > div > button:nth-of-type(1) {
+   cursor: pointer;
+   border: none;
+   background-color: lightgreen;
+   width: 30%;
+}
+.pokemonWrap > div > button:nth-of-type(2) {
+   cursor: pointer;
+   border: none;
+   background-color: lightcoral;
+   width: 20%;
+}
+
+.pokemonWrap img {
+   cursor: pointer;
+   width: 100%;
+}
+
+.modal-body {
+   display: flex;
+
+   gap: 10%;
+}
+.modal-body > div {
+   position: relative;
+}
+
+.modal-body > div::after {
+   position: absolute;
+   top: 30%;
+   right: -35%;
+   content: '=>';
+}
+.modal-body > div:nth-last-of-type(1)::after {
+   content: none;
+}
+
+.modal-body > div > p {
+   text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+   .insert > input {
+      font-size: 1.2rem;
+   }
+
+   .insert > button {
+      margin-left: 5%;
+      border: none;
+      border-radius: 5px;
+      background: black;
+      color: white;
+      font-size: 1rem;
+   }
+   .list > li {
+      border: 1px solid black;
+      width: 100%;
+      max-width: 48%;
+   }
+}
